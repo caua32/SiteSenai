@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+
+  <style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a19f9f;
+}
+table {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+input[type="email"], input[type="text"], 
+.botaoenviar {
+    box-sizing: border-box; 
+    width: 850px; 
+    padding: 15px; 
+    margin: 5px 0 30px 0; 
+    margin-top: 35px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: inherit;
+}
+
+input[type="email"], input[type="text"] {
+    background: #f1f1f1;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.imglogo{
+    margin-right: 15px;
+}
+
+
+ul {
+    list-style-type: none;
+    
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    background-color: #2e2d2d;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.div_flex {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+}
+.div_produtos {    
+    border-radius: 20px;
+    margin: 20px;
+    width: 50%;
+    width: 300px;
+    padding: 10px;
+    line-height: 1.5;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    background-color: white;
+    position: relative;
+}
+.botao {
+    height: 33px;
+    width: 300px;
+    background-color: rgb(245, 60, 60);
+    font-size: large;
+    color: white;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    cursor: pointer;
+
+}
+.div_produtos h5 {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <table>
+                <tr>
+                    <td><img src="imagens/senai.jpg" width="100px" class="imglogo"></td>
+                  <td><div class="logo">Mercado Senai</div></td>
+                </tr>
+            </table>
+
+            <label for="Email"><b></b></label> 
+            <input type="email" id="email" name="email"
+            placeholder="Pesquisar..." required>
+    
+            <ul>
+                <li><a href="Produtos.html" class="nav-link">Produtos</a> </li>
+                <li><a href="comentarios.html" class="nav-link">Comentários</a> </li>
+                <li><a href="index.html" class="nav-link">Sobre Nós</a></li>
+            </ul>
+
+            
+
+            
+        
+        </nav>
+    </header>
+
+  <!--Div principal produtos-->
+    <div>
+  <!--1 linha-->
+        <div class="div_flex">
+            <div class="div_produtos">
+                <div><img src="imagens/TV.webp" width="200px"></div>
+                <div><h5>A Smart TV Samsung 50DU7700 de 50" é a escolha ideal para quem procura uma TV 
+                de alta qualidade com ótimo custo-benefício. Com resolução 4K UHD (3840x2160),
+                painel VA e 60Hz de frequência, ela oferece imagens nítidas e detalhadas, 
+                mesmo em conteúdos de baixa qualidade. Além disso, a tecnologia LED garante 
+                cores mais vivas e vibrantes, além de um contraste mais profundo.</h5></div>
+                <div><h3>R$ 4.100,00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+
+            <div class="div_produtos">
+                <div><img src="imagens/Creatina.webp" width="150px" ></div>
+                <div><h5>Apresentamos a Creatina da Dark Lab: pureza comprovada em todos os aspectos. 
+                Passando por rigorosos testes de qualidade, garantindo sua excelência. 
+                A análise conduzida pela Abenutri registrou uma impressionante pureza de 
+                98,1%, enquanto o teste realizado pelo Felix Bonfin atestou uma pureza 
+                impecável de 100%.</h5></div>
+                <div><h3>R$124,00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+
+            <div class="div_produtos">
+                <div><img src="imagens/fantasia.webp" width="150px"></div>
+                <div><h5>Ideal para as princesas viverem momentos lúdicos de diversão e encanto.
+                Vestido com acabamento perfeito, e com caimento leve para que as meninas se 
+                sintam bem e confortáveis.</h5></div>
+                <div><h3>R$ 78,90</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+
+            <div class="div_produtos">
+                <div><img src="imagens/radios.webp" width="200px"></div>
+                <div><h5>Para uso em serviços de comunicação como portaria, segurança patrimonial, 
+                vigilância, operacional, monitoria, controlador de acesso, eventos, entre 
+                muitos outros, esse comunicador Walk Talk pode ser muito útil para diversas 
+                atividades. Tem bateria de uso muito prolongado. É leve e prático de usar 
+                mesmo para quem não tem muita experiência, pois o aparelho é super intuitivo. 
+                Perfeito para comunicação em curta ou média distância, som alto e claro.</h5></div>
+                <div><h3>R$ 237,51</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+        </div>
+
+<!--2 linha-->
+        <div class="div_flex">
+            <div class="div_produtos">
+                <div><img src="imagens/ventilador.webp" width="200px"></div>
+                <div><h5>O ventilador de mesa Super Turbo VTX-40-8P possui 40 cm de diâmetro e hélice de 8 pás,
+                o que promove uma circulação de ar mais eficiente e garante mais frescor ao ambiente. 
+                O sistema de ventilação alia a potência para refrescar ao baixo nível de ruído, 
+                proporcionando o silêncio necessário para momentos de concentração e uma excelente noite de sono.</h5></div>
+                <div><h3>R$270.00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+
+            <div class="div_produtos">
+                <div><img src="imagens/relogio.webp" width="200px"></div>
+                <div><h5>Relógio smartwatch esportivo masculino FOXBOX suporta mais de 70 modos esportivos, de corrida ao ar livre a ciclismo,
+                futebol, montanhismo, etc., para atender às suas diversas necessidades esportivas.
+                Você também pode visualizar seus dados esportivos no relógio ou no app, 
+                e há uma função de lembrete de conquista de metas para ajudá-lo a planejar cientificamente e atingir suas metas esportivas diárias.</h5></div>
+                <div><h3>R$200,00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+
+            <div class="div_produtos">
+                <div><img src="imagens/cama.webp" width="200px"></div>
+                <div><h5>Jogo de cama S.King Vision Amelie. Inspirada em sonhos serenos,
+                a Coleção Amelie remete a beleza e refinamento dos clássicos jogos de enxovais.
+                Sua estampa tridimensional com efeito rendado, cria realismo para as peças,
+                conferindo sofisticado visual artesanal. A renda surge como moldura no sobrelençol e fronhas,
+                destacadas em elegante fundo texturizado em tonalidade rosa </h5></div>
+                <div><h3>R$663,00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+
+            <div class="div_produtos">
+                <div><img src="imagens/batedeira.webp" width="200"></div>
+                <div><h5>Batedeira Com Pedestal Kitchenaid Artisan Kea33 Empire Red 60 Hz 127 v
+                Desenvolvida pela Americana Kitchenaid, esta batedeira vermelha possui 
+                movimento planetário com 67 pontos de contato, 10 velocidades, protetor de 
+                respingos e compatibilidade para diversos acessórios. Projetada especialmente
+                para tornar o tempo na cozinha em um dos mais prazerosos do dia. O design 
+                retrô proporciona destaque ao ambiente, enquanto materiais como o metal 
+                utilizado em sua fabricação oferecem durabilidade e resistência. Presente 
+                no Brasil desde 2008, conquistando corações e cozinhas com produtos inspirados
+                no universo da culinária profissional.</h5></div>
+                <div><h3>R$2.250</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+        </div>
+
+<!--3 linha-->
+        <div class="div_flex">
+            <div class="div_produtos">
+                <div><img src="imagens/maquininha.webp" width="200px"></div>
+                <div><h5>Point Pro 2: A maquininha de cartão que imprime comprovantes!
+                -Taxas Promocionais* por tempo limitado a partir de 0,74% no débito!
+                -Quanto mais você vende, menores podem ser suas taxas.
+                - Seu dinheiro disponível na hora, sem aluguel e sem taxa de adesão.
+                -Aceite pagamentos por aproximação, voucher, cartão com chip e tarja magnética, código QR e Pix.
+                -Venda de qualquer lugar com Wi-Fi e chip 3G grátis e plano de dados ilimitado.
+                - Administre suas vendas com facilidade pela maquininha.
+                - Imprima comprovantes e tenha reposição de bobinas grátis.
+                -Crie sua conta digital pessoal ou empresarial grátis e sem burocracia.
+                - Ofereça recargas de celular.
+                -Tenha mais de uma maquininha usando a mesma conta.
+                -Tenha 3 anos de garantia e troca grátis.</h5></div>
+                <div><h3>R$110,00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+
+            <div class="div_produtos">
+                <div><img src="imagens/lego.webp" width="200px"></div>
+                <div><h5>Estimule o raciocínio das crianças com o fascinante e divertido LEGO® Classic
+                Maleta da Criatividade (10713). Com 213 peças coloridas, as crianças poderão 
+                criar e recriar lindos personagens e cenários com esta maleta infantil. 
+                Com jogos criativos e dinâmicos este incrível brinquedo de montar desenvolve 
+                o raciocínio, noção espacial e coordenação motora das crianças, além de 
+                proporcionar momentos de muita alegria e interatividade. A maleta criativa é a
+                opção ideal de presente para crianças de 4 anos.</h5></div>
+                <div><h3>R$180,00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+            
+            <div class="div_produtos">
+                <div><img src="imagens/yoda.webp" width="200px"></div>
+                <div><h5>Brinquedos articulados. Ao ter marcadas as articulações, você poderá manusear e 
+                ajustar suas figuras como quiser. Com elas, você poderá criar histórias onde os personagens 
+                podem se mobilizar e ganhar vida.</h5></div>
+                <div><h3>R$180,00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+
+                
+            <div class="div_produtos">
+                <div><img src="imagens/Fritadeira.webp" width="200px"></div>
+                <div><h5>Start Fry Elgin possui capacidade para até 3,5 litros, potência de 1400w e revestimento antiaderente.
+                A grelha de fritura é removível e fácil de limpar.
+                Possui proteção contra superaquecimento.   
+                Controle de temperatura de 80°c a 200°c.
+                Timer para até 60 minutos com aviso sonoro e desligamento automático.
+                Design único, sistema de circulação de ar ultra rápido que frita e economiza energia.
+                Base antiderrapante e alça fria que facilitam o uso.
+                Capacidade para até 3,5 litros.</h5></div>
+                <div><h3>R$210,00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+        </div>  
+        
+<!--4 linha-->        
+        <div class="div_flex">
+            <div class="div_produtos">
+                <div><img src="imagens/venom.webp" width="200px"></div>
+                <div><h5>PERSONAGENS MARVEL: Inspiradas em personagens superpoderosas dos heróis e vilões do universo Marvel,
+                estas figuras em tamanho grande são ideais para crianças acima de 4 anos,
+                proporcionando muita ação e aventura.</h5></div>
+                <div><h3>R$130,00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+
+            <div class="div_produtos">
+                <div><img src="imagens/cap.webp" width="200px"></div>
+                <div><h5>Adicione o Boneco Funko Pop! Capitão América à sua coleção e celebre o icônico super-herói da Marvel em uma versão inspirada em sua 
+                primeira aparição no Funko Pop!. Com aproximadamente 9 centímetros de altura,
+                esta figura de vinil com cabeça oscilante é perfeita para qualquer fã da Marvel.</h5></div>
+                <div><h3>R$250,00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+
+            <div class="div_produtos">
+                <div><img src="imagens/bolsa.webp" width="200px"></div>
+                <div><h5>Leve a organização para outro nível com a Mochila Esportiva Intelligent Packing System adidas, 
+                perfeita para acompanhar suas rotinas movimentadas e viagens de negócios. Confeccionada em ripstop de poliéster reciclado, esta mochila combina resistência e praticidade. 
+                Seu sistema de organização inteligente inclui um amplo compartimento principal com divisória acolchoada para notebook, 
+                dois bolsos frontais para acesso rápido e dois bolsos laterais para garrafas. As alças ajustáveis e acolchoadas garantem conforto,
+                enquanto os detalhes refletivos aumentam sua segurança em ambientes com pouca luz.</h5></div>
+                <div><h3>R$200,00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+                </div>
+
+            <div class="div_produtos">
+                <div><img src="imagens/PassaRoupa].webp" width="200px"></div>
+                <div><h5>Ferro De Passar Bfv200az A Vapor Extra Britânia com base antiaderente e vapor vertical. 
+                Controle de saída de vapor e reservatório de 200ml. Cabo giratório de 360º para maior mobilidade 
+                e sistema autolimpante que limpa o acúmulo de minerais e resíduos. Seletor de temperatura e led luminoso
+                que indica quando o ferro atingiu a temperatura ajustada.</h5></div>
+                <div><h3>$85,00</h3></div>
+                <div><button  type="button" class="botao">Comprar Produto</button></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Atendimento de segunda a sexta, das 9h às 20h | SAC: (00) 0000-0000 | contato@mercadosenai.com.br <br>
+            Política de Privacidade | Termos de Uso | Trocas e Devoluções
+            
+            Formas de pagamento: Pix, Boleto, Cartões de Crédito e Débito<br>
+            <br>
+            Site 100% seguro com certificação SSL<br>
+            <br>
+            &copy;  2025 Mercado Senai. Todos os direitos reservados.
+        </p>
+        <img src="imagens/logos.png">
+        
+    </footer>
+</body>
+</html>
